@@ -1,0 +1,7 @@
+/* Tailwind CSS v4 — single import activates all utilities */
+@import "tailwindcss";
+
+/* =========================================================
+   Project-level global styles will be added in future milestones.
+   Keep this file minimal during scaffolding.
+   ========================================================= */

@@ -1,0 +1,96 @@
+# ============================================================
+# MSME Delivery & Acceptance Ledger — .gitignore
+# ============================================================
+
+# ----------------------------------------------------------
+# Environment Variables
+# .env.example IS tracked (safe template with no real values)
+# ----------------------------------------------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+!.env.example
+
+# ----------------------------------------------------------
+# Node / Frontend
+# ----------------------------------------------------------
+node_modules/
+dist/
+build/
+.vite/
+*.local
+
+# ----------------------------------------------------------
+# Python / Backend
+# ----------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+.eggs/
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+
+# ----------------------------------------------------------
+# Blockchain / Hardhat
+# ----------------------------------------------------------
+blockchain/artifacts/
+blockchain/cache/
+blockchain/node_modules/
+blockchain/typechain-types/
+blockchain/coverage/
+blockchain/coverage.json
+deployments/
+.openzeppelin/
+
+# ----------------------------------------------------------
+# IDE & OS
+# ----------------------------------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------------------------------------
+# Logs
+# ----------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ----------------------------------------------------------
+# Sensitive / Secrets
+# ----------------------------------------------------------
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+private_keys/
